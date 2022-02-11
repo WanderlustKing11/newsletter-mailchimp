@@ -38,11 +38,11 @@ app.post("/", function(req, res) {
 
   const jsonData = JSON.stringify(data);
 
-  const url = "https://us**region code here**.api.mailchimp.com/3.0/lists/**List ID**";
+  const url = "https://us**region code here**.api.mailchimp.com/3.0/lists/**List ID**";  // the regional code is usually at the very end of the API Key
 
   const options = {
     method: "POST",
-    auth: "**string:API Key************"
+    auth: "**string:API Key************" // This string is like your name, but can be whatever, followed by : then API Key, make sure no space
   }
 
   const request = https.request(url, options, function(response) {
@@ -58,7 +58,7 @@ app.post("/", function(req, res) {
     });
   });
 
-  // request.write(jsonData);
+  request.write(jsonData);
   request.end();
 
 });
@@ -68,6 +68,6 @@ app.post("/failure", function(req, res) {
   res.redirect("/");
 });
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("Server is running on port 3000.");
 });
