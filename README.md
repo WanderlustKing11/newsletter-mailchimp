@@ -5,7 +5,7 @@ Used HTML5, CSS, Bootstrap, JavaScript, Node, Express
 
 Takes clients/users inputted data in our landing page and adds them as new subscribers in our Mailchimp database.
 
-Right now the only thing you will see is the landing page, but will have to run with node (see Docs below). Full update coming soon.
+This program runs on Node, so you will have to install and follow directions below. Also, I do not provide API Key. Sign up at Mailchimp now and create an account to get API Key.
 
 ## How to run
 
@@ -22,6 +22,8 @@ Right now the only thing you will see is the landing page, but will have to run 
 - Should get a return "Server is running on port 3000."
 - Open your browser and type: localhost:3000
 
-You should see the Sign-up page. In the coming update this will be deployed with Heroku with an actual https. At that point, if you want to have access to the MailChimp API you will need to create a profile so that you can have your own API key, and then you'll have a working newsletter to communicate with all of your clients and followers.
+You should see the Sign-up page.
+
+You can use this newsletter for yourself. If you already understand Node, then it should be really simple once you create your own account at Mailchimp, and then you will have a working newsletter.
 
 Cheers!
